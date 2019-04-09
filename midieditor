@@ -1,0 +1,23 @@
+#!/bin/bash
+# Script to start timidity if present and not running, 
+# then launch MidiEditor. (C) Joel Schneider 2019
+
+ps aux | grep 'timidity \-iA' 2>&1 > /dev/null
+TIMIDITY_RUNNING="$?" # 0: yes; 1: no
+which timidity 2>&1 > /dev/null
+TIMIDITY_EXISTS="$?" # 0: yes; 1: no
+
+if [ "$TIMIDITY_EXISTS" == "0" ]; then
+	if [ "$TIMIDITY_RUNNING" == "1" ]; then
+		timidity -iA 2>&1 > /dev/null &
+		TIMIDITY_PID="$!"
+	fi
+fi
+
+cd /usr/lib/midieditor/
+./MidiEditor 2>&1 > /dev/null
+cd - > /dev/null
+
+if [ "$TIMIDITY_PID" ]; then
+	kill $TIMIDITY_PID
+fi

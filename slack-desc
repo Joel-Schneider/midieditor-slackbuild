@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+       |-----handy-ruler------------------------------------------------------|
+midieditor: midieditor (short description of app)
+midieditor:
+midieditor: MidiEditor is a free software providing an interface to edit, record, 
+midieditor: and play Midi data.
+midieditor:
+midieditor: The editor is able to open existing Midi files and modify their
+midieditor: content. New files can be created and the user can enter his own
+midieditor: composition by either recording Midi data from a connected Midi
+midieditor: device (e.g., a digital piano or a keyboard) or by manually
+midieditor: creating new notes and other Midi events.
+midieditor: https://www.midieditor.org/

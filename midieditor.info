@@ -1,0 +1,8 @@
+PRGNAM="midieditor"
+VERSION="3.2.1"
+HOMEPAGE="https://midieditor.org/"
+DOWNLOAD="https://github.com/markusschwenk/midieditor/archive/3.2.1.zip"
+MD5SUM="4023cde64d31c68701813ade0b2ef062"
+REQUIRES="qt5 TiMidity++"
+MAINTAINER="Joel Schneider"
+EMAIL="joel@localhost"
